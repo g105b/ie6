@@ -1,3 +1,7 @@
+<?php if(isset($_GET["iurl"])) {
+require("Proxy.php");
+exit;
+}?>
 <!doctype html>
 <html>
 <head>
@@ -74,17 +78,16 @@
 		</li>
 	</menu>
 	<form id="ie6-addressbar" class="toolbar" target="output">
-		<label for="url">Address</label>
-		<input id="url" value="http://google.com" list="websites" autofocus />
+		<label for="iurl">Address</label>
+		<input name="iurl" id="iurl" value="" list="websites" autofocus />
 		<button id="btn_go">Go</button>
 	</form>
 
-	<iframe src="/Page.html?url=http://google.com" frameborder="0" 
+	<iframe src="/?iurl=http://google.com" frameborder="0" 
 	id="output"></iframe>
 </div>
 
 <datalist id="websites">
-	<option value="http://google.com" />
 	<option value="http://microsoft.com" />
 	<option value="http://bing.com" />
 </datalist>
