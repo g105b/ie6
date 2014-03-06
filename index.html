@@ -19,7 +19,74 @@
 			<button class="block">&#x274C;</button>
 		</div>
 	</div>
+	<menu type="toolbar" id="ie6-toolbar-menu" class="toolbar">
+		<li>
+			<label>File</label>
+		</li>
+		<li>
+			<label>Edit</label>
+		</li>
+		<li>
+			<label>View</label>
+		</li>
+		<li>
+			<label>Favourites</label>
+		</li>
+		<li>
+			<label>Tools</label>
+		</li>
+		<li>
+			<label>Help</label>
+		</li>
+	</menu>
+	<menu id="ie6-action-menu" class="toolbar">
+		<li>
+			<button>Back</button>
+		</li>
+		<li>
+			<button>Forward</button>
+		</li>
+		<li>
+			<button>Stop</button>
+		</li>
+		<li>
+			<button>Refresh</button>
+		</li>
+		<li>
+			<button>Home</button>
+		</li>
+		<li class="separator"></li>
+		<li>
+			<button>Search</button>
+		</li>
+		<li>
+			<button>Favourites</button>
+		</li>
+		<li>
+			<button>History</button>
+		</li>
+		<li class="separator"></li>
+		<li>
+			<button>Mail</button>
+		</li>
+		<li>
+			<button>Print</button>
+		</li>
+	</menu>
+	<form id="ie6-addressbar" class="toolbar">
+		<label for="url">Address</label>
+		<input id="url" value="http://google.com" list="websites" autofocus />
+		<button id="btn_go">Go</button>
+	</form>
+
+	<iframe src="/Page.html?url=http://google.com"></iframe>
 </div>
+
+<datalist id="websites">
+	<option value="http://google.com" />
+	<option value="http://microsoft.com" />
+	<option value="http://bing.com" />
+</datalist>
 
 <script src="/Script.js"></script>
 <script>
