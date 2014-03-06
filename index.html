@@ -73,13 +73,14 @@
 			<button>Print</button>
 		</li>
 	</menu>
-	<form id="ie6-addressbar" class="toolbar">
+	<form id="ie6-addressbar" class="toolbar" target="output">
 		<label for="url">Address</label>
 		<input id="url" value="http://google.com" list="websites" autofocus />
 		<button id="btn_go">Go</button>
 	</form>
 
-	<iframe src="/Page.html?url=http://google.com"></iframe>
+	<iframe src="/Page.html?url=http://google.com" frameborder="0" 
+	id="output"></iframe>
 </div>
 
 <datalist id="websites">
