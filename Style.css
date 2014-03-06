@@ -1,0 +1,57 @@
+body {
+	background: teal;
+}
+
+.block {
+	background: #c0c0c0;
+	border: 1px solid #fff;
+	border-bottom-color: #808080;
+	border-right-color: #808080;
+	box-shadow:
+		-1px -1px 0 #dfdfdf,
+		1px 1px 0 #000;
+}
+
+#ie6-window {
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 128px;
+	width: 800px;
+	height: 600px;
+}
+
+#ie6-titlebar {
+	background-color: #000080;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	font-smooth: never;
+	-webkit-font-smoothing : none;
+	cursor: default;
+}
+
+#ie6-titlebar span {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-block;
+	padding: 2px;
+}
+
+#ie6-titlebar-buttons {
+	float: right;
+	font-size: 12px;
+}
+
+#ie6-titlebar-buttons button {
+	display: inline-block;
+	width: 15px;
+	height: 13px;
+	padding: 0;
+	margin: 2px 0;
+	font-size: 10px;
+	outline: none;
+}
+#ie6-titlebar-buttons button:last-of-type {
+	margin: 2px;
+}
