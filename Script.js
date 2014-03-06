@@ -47,5 +47,8 @@ iframe.addEventListener("load", function(e) {
 	this.style.visibility = "visible";
 	fuckUp(this.contentWindow.document);
 });
+iframe.addEventListener("unload", function(e) {
+	this.style.visibility = "hidden";
+});
 
 })();
